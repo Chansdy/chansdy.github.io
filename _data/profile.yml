@@ -44,7 +44,7 @@ education:
   - name: Beijing Jiaotong University
     logo: /assets/images/badges/bjtu.png
     position: >-
-      School of Computer Science and Technology<br/>
+      <span style="white-space: nowrap;">School of Computer Science and Technology</span><br/>
       Ph.D. Student<br/>
       Advisor: <a href="https://faculty.bjtu.edu.cn/7968/" target="_blank" rel="noopener noreferrer">Prof. Congyan Lang</a>
     date: Sep. 2022 - Jun. 2027
