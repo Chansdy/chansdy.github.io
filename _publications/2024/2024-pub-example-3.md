@@ -2,7 +2,6 @@
 title:          "Joint Homophily and Heterophily Relational Knowledge Distillation for Efficient and Compact 3D Object Detection"
 selected:       true
 pub:            "ACM International Conference on Multimedia (ACM MM),"
-pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
 pub_date:       "2024"
 semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
 abstract: >-
