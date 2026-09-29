@@ -42,24 +42,24 @@ portrait_caption: >-
 
 education:
   - name: Beijing Jiaotong University
-    logo: /assets/images/badges/BJTU.png
+    logo: /assets/images/badges/bjtu.png
     position: >-
       School of Computer Science and Technology<br/>
       Ph.D. Student
     date: Sep. 2022 - Jun. 2027
 
   - name: Nanyang Technological University
-    logo: /assets/images/badges/NTU.png
+    logo: /assets/images/badges/ntu.png
     position: Visiting Ph.D. Student
     date: Sep. 2025 - Sep. 2026
 
   - name: Beijing Jiaotong University
-    logo: /assets/images/badges/BJTU.png
+    logo: /assets/images/badges/bjtu.png
     position: M.S. in Computer Science and Technology
     date: Sep. 2020 - Jun. 2022
 
   - name: China University of Petroleum (East China)
-    logo: /assets/images/badges/CUP.png
+    logo: /assets/images/badges/pu.png
     position: B.S. in Computer Science and Technology
     date: Sep. 2016 - Jun. 2020
 
