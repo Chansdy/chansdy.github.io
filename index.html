@@ -1,144 +1,1303 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Shidi Chen - Ph.D. Student in Computer Science at Beijing Jiaotong University.">
+
+<meta name="description"
+      content="Shidi Chen - Ph.D. Student in Computer Science at Beijing Jiaotong University.">
+
 <title>Shidi Chen | Homepage</title>
+
+<!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600&display=swap"
+      rel="stylesheet">
+
+
 <style>
-:root{--text:#222;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb;--accent-soft:#eff6ff;--card:#f8fafc;--max:1120px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);background:#fff;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.7}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
-.nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}.nav-inner{max-width:var(--max);margin:auto;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 24px}.brand{font-weight:700;font-size:18px;color:#111827}.nav-links{display:flex;gap:22px;font-size:14px}.nav-links a{color:#4b5563}.nav-links a:hover{color:var(--accent);text-decoration:none}
-.container{max-width:var(--max);margin:0 auto;padding:54px 24px 80px}.hero{display:grid;grid-template-columns:250px 1fr;gap:52px;align-items:start;padding-bottom:46px;border-bottom:1px solid var(--line)}.profile{text-align:center}.profile img{width:190px;height:190px;object-fit:cover;border-radius:50%;border:1px solid #e5e7eb;box-shadow:0 8px 28px rgba(0,0,0,.08);background:#f3f4f6}.profile h1{margin:18px 0 2px;font-size:28px;letter-spacing:-.03em}.profile .role{color:var(--muted);font-size:14px}.socials{margin-top:16px;display:flex;justify-content:center;flex-wrap:wrap;gap:8px}.socials a{padding:6px 10px;border:1px solid var(--line);border-radius:7px;color:#374151;font-size:12px;background:#fff}.socials a:hover{border-color:#bfdbfe;color:var(--accent);text-decoration:none}
-.hero-text h2{margin:0 0 18px;font-family:"Source Serif 4",Georgia,serif;font-size:34px;font-weight:500;line-height:1.25}.hero-text p{margin:0 0 15px;color:#4b5563}.highlight{margin-top:22px;padding:14px 18px;border-left:3px solid var(--accent);background:var(--accent-soft);color:#374151;font-size:14px}
-section{padding-top:48px}.section-title{font-family:"Source Serif 4",Georgia,serif;font-size:28px;font-weight:500;margin:0 0 22px;padding-bottom:10px;border-bottom:1px solid var(--line)}.news-item,.timeline-item,.pub-item{margin-bottom:22px}.news-item{display:grid;grid-template-columns:105px 1fr;gap:20px}.date{color:var(--muted);font-size:13px;white-space:nowrap}
-.timeline-item{position:relative;padding-left:22px;border-left:2px solid #e5e7eb}.timeline-item:before{content:"";position:absolute;width:8px;height:8px;border-radius:50%;background:var(--accent);left:-5px;top:8px}.timeline-item h3{margin:0 0 2px;font-size:16px}.timeline-item .meta{color:var(--muted);font-size:13px;margin-bottom:6px}.timeline-item p{margin:0;color:#4b5563;font-size:14px}
-.pub-item{display:grid;grid-template-columns:72px 1fr;gap:18px}.pub-year{font-size:13px;color:var(--muted);padding-top:2px}.pub-title{font-weight:600;color:#1f2937}.pub-authors{margin-top:3px;color:#4b5563;font-size:14px}.venue{margin-top:3px;color:#6b7280;font-size:13px;font-style:italic}.tag{display:inline-block;margin-left:6px;padding:1px 7px;border-radius:999px;background:#f3f4f6;color:#4b5563;font-size:11px;font-style:normal}
-.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.project{border:1px solid var(--line);border-radius:10px;padding:20px;background:#fff;transition:transform .15s ease,box-shadow .15s ease}.project:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.06)}.project h3{margin:0 0 8px;font-size:16px}.project .project-meta{color:var(--accent);font-size:12px;margin-bottom:8px}.project p{margin:0;color:#4b5563;font-size:14px}
-.skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.skill{padding:16px 18px;background:var(--card);border-radius:8px}.skill strong{display:block;margin-bottom:4px;font-size:14px}.skill span{color:#4b5563;font-size:13px}.education-row{display:grid;grid-template-columns:150px 1fr;gap:22px;padding:15px 0;border-bottom:1px solid #f0f0f0}.education-row:last-child{border-bottom:none}.education-year{color:var(--muted);font-size:13px}.education-school{font-weight:600}.education-degree{color:#4b5563;font-size:14px}.awards li{margin-bottom:8px;color:#4b5563}footer{margin-top:64px;padding-top:22px;border-top:1px solid var(--line);color:#9ca3af;font-size:12px;text-align:center}
-@media(max-width:800px){.nav-links{display:none}.hero{grid-template-columns:1fr;gap:30px;text-align:center}.hero-text{text-align:left}.project-grid,.skills{grid-template-columns:1fr}.news-item,.pub-item{grid-template-columns:1fr;gap:2px}.education-row{grid-template-columns:1fr;gap:2px}.container{padding-top:34px}}
+
+/* =========================================================
+   Global
+========================================================= */
+
+:root {
+    --text: #222;
+    --muted: #6b7280;
+    --line: #e5e7eb;
+    --accent: #2563eb;
+    --card: #ffffff;
+    --bg: #f5f7fa;
+    --max: 1280px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    color: var(--text);
+    background: var(--bg);
+    font-family: Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+    line-height: 1.7;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   Navigation
+========================================================= */
+
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid var(--line);
+}
+
+.nav-inner {
+    max-width: var(--max);
+    margin: auto;
+
+    height: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+}
+
+.brand {
+    font-weight: 700;
+    font-size: 18px;
+    color: #111827;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    font-size: 14px;
+}
+
+.nav-links a {
+    color: #4b5563;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   Main Container
+========================================================= */
+
+.container {
+    max-width: var(--max);
+    margin: 0 auto;
+
+    padding: 40px 30px 80px;
+}
+
+
+/* =========================================================
+   Top Section
+========================================================= */
+
+.top-grid {
+
+    display: grid;
+
+    grid-template-columns: 330px 1fr;
+
+    gap: 36px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   Profile Card
+========================================================= */
+
+.profile-card {
+
+    background: var(--card);
+
+    border: 1px solid var(--line);
+
+    border-radius: 20px;
+
+    padding: 34px 25px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.profile-card img {
+
+    width: 220px;
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 1px solid var(--line);
+
+    box-shadow: 0 8px 28px rgba(0,0,0,0.10);
+
+    background: #f3f4f6;
+}
+
+.profile-card h1 {
+
+    margin: 20px 0 4px;
+
+    font-size: 30px;
+
+    letter-spacing: -0.03em;
+}
+
+.profile-card .role {
+
+    color: var(--muted);
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   Email
+========================================================= */
+
+.email {
+
+    margin-top: 10px;
+
+    font-size: 15px;
+}
+
+.email a {
+
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   Social Buttons
+========================================================= */
+
+.socials {
+
+    margin-top: 22px;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 9px;
+}
+
+.socials a {
+
+    padding: 7px 12px;
+
+    border: 1px solid var(--line);
+
+    border-radius: 8px;
+
+    color: #374151;
+
+    font-size: 13px;
+
+    background: #fff;
+
+    transition: all 0.15s ease;
+}
+
+.socials a:hover {
+
+    border-color: #bfdbfe;
+
+    color: var(--accent);
+
+    text-decoration: none;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   About Me Card
+========================================================= */
+
+.about-card {
+
+    background: var(--card);
+
+    border: 1px solid var(--line);
+
+    border-radius: 20px;
+
+    padding: 42px 52px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.about-card h2 {
+
+    margin: 0 0 25px;
+
+    font-family:
+        "Source Serif 4",
+        Georgia,
+        serif;
+
+    font-size: 40px;
+
+    font-weight: 600;
+
+    line-height: 1.2;
+}
+
+.about-card p {
+
+    margin: 0 0 20px;
+
+    color: #4b5563;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   Content Cards
+========================================================= */
+
+.content-card {
+
+    margin-top: 30px;
+
+    background: var(--card);
+
+    border: 1px solid var(--line);
+
+    border-radius: 20px;
+
+    padding: 35px 48px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+
+/* =========================================================
+   Section Title
+========================================================= */
+
+.section-title {
+
+    font-family:
+        "Source Serif 4",
+        Georgia,
+        serif;
+
+    font-size: 30px;
+
+    font-weight: 600;
+
+    margin: 0 0 25px;
+
+    padding-bottom: 14px;
+
+    border-bottom: 1px solid var(--line);
+}
+
+
+/* =========================================================
+   Education
+========================================================= */
+
+.education-row {
+
+    display: grid;
+
+    grid-template-columns: 180px 1fr;
+
+    gap: 30px;
+
+    padding: 22px 0;
+
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.education-row:last-child {
+
+    border-bottom: none;
+}
+
+.education-year {
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    white-space: nowrap;
+}
+
+.education-school {
+
+    font-weight: 700;
+
+    font-size: 19px;
+
+    color: #222;
+}
+
+.education-degree {
+
+    margin-top: 4px;
+
+    color: #4b5563;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   Publications
+========================================================= */
+
+.pub-item {
+
+    display: grid;
+
+    grid-template-columns: 75px 1fr;
+
+    gap: 20px;
+
+    padding: 20px 0;
+
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.pub-item:last-of-type {
+
+    border-bottom: none;
+}
+
+.pub-year {
+
+    color: var(--muted);
+
+    font-size: 14px;
+}
+
+.pub-title {
+
+    font-weight: 700;
+
+    color: #1f2937;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+}
+
+.pub-authors {
+
+    margin-top: 6px;
+
+    color: #4b5563;
+
+    font-size: 14px;
+}
+
+.venue {
+
+    margin-top: 5px;
+
+    color: #6b7280;
+
+    font-size: 13px;
+
+    font-style: italic;
+}
+
+.tag {
+
+    display: inline-block;
+
+    margin-left: 7px;
+
+    padding: 2px 8px;
+
+    border-radius: 999px;
+
+    background: #f3f4f6;
+
+    color: #4b5563;
+
+    font-size: 11px;
+
+    font-style: normal;
+}
+
+
+/* =========================================================
+   Under Review
+========================================================= */
+
+.submission {
+
+    margin-top: 25px;
+
+    color: #4b5563;
+
+    font-size: 14px;
+}
+
+.submission ul {
+
+    margin-top: 8px;
+
+    padding-left: 20px;
+}
+
+.submission li {
+
+    margin-bottom: 7px;
+}
+
+
+/* =========================================================
+   Footer
+========================================================= */
+
+footer {
+
+    max-width: var(--max);
+
+    margin: 0 auto;
+
+    padding: 30px;
+
+    color: #9ca3af;
+
+    font-size: 12px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   Tablet
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .top-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .profile-card {
+
+        max-width: 500px;
+
+        margin: 0 auto;
+    }
+
+    .about-card {
+
+        padding: 32px;
+    }
+
+    .content-card {
+
+        padding: 30px;
+    }
+}
+
+
+/* =========================================================
+   Mobile
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .nav-links {
+
+        display: none;
+    }
+
+    .container {
+
+        padding: 25px 15px 60px;
+    }
+
+    .profile-card img {
+
+        width: 180px;
+        height: 180px;
+    }
+
+    .about-card {
+
+        padding: 25px;
+    }
+
+    .about-card h2 {
+
+        font-size: 32px;
+    }
+
+    .about-card p {
+
+        font-size: 15px;
+    }
+
+    .content-card {
+
+        padding: 25px 20px;
+    }
+
+    .education-row {
+
+        grid-template-columns: 1fr;
+
+        gap: 4px;
+    }
+
+    .pub-item {
+
+        grid-template-columns: 1fr;
+
+        gap: 3px;
+    }
+}
+
 </style>
 </head>
+
+
 <body>
-<nav class="nav"><div class="nav-inner"><a class="brand" href="#top">Shidi Chen</a><div class="nav-links"><a href="#about">About</a><a href="#news">News</a><a href="#education">Education</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#experience">Experience</a></div></div></nav>
+
+
+<!-- =====================================================
+     Navigation
+===================================================== -->
+
+<nav class="nav">
+
+    <div class="nav-inner">
+
+        <a class="brand" href="#top">
+            Shidi Chen
+        </a>
+
+        <div class="nav-links">
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#education">
+                Education
+            </a>
+
+            <a href="#publications">
+                Publications
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =====================================================
+     Main
+===================================================== -->
+
 <main class="container" id="top">
-<div class="hero" id="about">
-<aside class="profile">
-    <img src="assets/profile.jpg" alt="Shidi Chen">
-    <h1>Shidi Chen</h1>
-    <div class="role">Ph.D. Student, Beijing Jiaotong University</div>
-    <div class="role">
-    <a href="mailto:shidichen@bjtu.edu.cn">shidichen@bjtu.edu.cn</a>
+
+
+    <!-- =================================================
+         Top Section
+    ================================================== -->
+
+    <div class="top-grid">
+
+
+        <!-- ============================
+             Profile
+        ============================= -->
+
+        <aside class="profile-card">
+
+            <img
+                src="assets/profile.jpg"
+                alt="Shidi Chen"
+            >
+
+            <h1>
+                Shidi Chen
+            </h1>
+
+            <div class="role">
+
+                Ph.D. Student<br>
+
+                Beijing Jiaotong University
+
+            </div>
+
+
+            <!-- Email -->
+
+            <div class="email">
+
+                <a href="mailto:shidichen@bjtu.edu.cn">
+
+                    shidichen@bjtu.edu.cn
+
+                </a>
+
+            </div>
+
+
+            <!-- Social Links -->
+
+            <div class="socials">
+
+
+                <a
+                    href="mailto:shidichen@bjtu.edu.cn"
+                >
+                    ✉ Email
+                </a>
+
+
+                <a
+                    href="https://github.com/Chansdy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    ◉ GitHub
+                </a>
+
+
+                <a
+                    href="https://scholar.google.com/citations?hl=zh-TW&user=vtgM-14AAAAJ"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    🎓 Google Scholar
+                </a>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- ============================
+             About Me
+        ============================= -->
+
+        <section
+            class="about-card"
+            id="about"
+        >
+
+            <h2>
+                About Me
+            </h2>
+
+
+            <p>
+
+                I am a Ph.D. student at the
+                Key Laboratory of Transportation Big Data and Artificial Intelligence,
+                Ministry of Education, School of Computer Science and Technology,
+                <strong>Beijing Jiaotong University</strong>,
+                advised by
+
+                <a
+                    href="https://faculty.bjtu.edu.cn/7968/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Prof. Congyan Lang
+                </a>.
+
+            </p>
+
+
+            <p>
+
+                My research interests focus on
+                <strong>3D Vision</strong> and
+                <strong>Vision-Language Models</strong>,
+                particularly
+                <strong>3D Object Detection</strong> and
+                <strong>3D Visual Grounding</strong>.
+
+                I aim to develop multimodal approaches for
+                understanding and reasoning about complex
+                3D environments.
+
+            </p>
+
+
+            <p>
+
+                I was previously a
+                <strong>Visiting Ph.D. Student</strong> at
+                <strong>Nanyang Technological University</strong>,
+                where I conducted research related to
+                multimodal vision and 3D scene understanding.
+
+            </p>
+
+        </section>
+
     </div>
-    <div class="socials">
-        <a href="mailto:shidic060@163.com">
-            <i class="fa-solid fa-envelope"></i> Email
-        </a>
-
-        <a href="https://github.com/Chansdy" target="_blank">
-            <i class="fa-brands fa-github"></i> GitHub
-        </a>
-
-        <a href="https://scholar.google.com/citations?hl=zh-TW&user=vtgM-14AAAAJ" target="_blank">
-            <i class="fa-solid fa-graduation-cap"></i> Google Scholar
-        </a>
-    </div>
-</aside> 
-<div class="hero-text">
-
-    <h2>About Me</h2>
-
-    <p>
-        I am a Ph.D. student at the 
-        Key Laboratory of Transportation Big Data and Artificial Intelligence, Ministry of Education,
-        School of Computer Science and Technology, <strong>Beijing Jiaotong University</strong>,
-        advised by 
-        <a href="https://faculty.bjtu.edu.cn/7968/" target="_blank" rel="noopener noreferrer">
-            Prof. Congyan Lang
-        </a>.
-    </p>
-    <p>
-        My research interests focus on <strong>3D Vision</strong> and 
-        <strong>Vision-Language Models</strong>, particularly 
-        <strong>3D Object Detection</strong> and <strong>3D Visual Grounding</strong>.
-        I aim to develop multimodal approaches for understanding and reasoning about
-        complex 3D environments.
-    </p>
 
 
-    <!-- Education -->
-    <section id="education" class="hero-education">
 
-        <h2 class="section-title">Education</h2>
+    <!-- =================================================
+         Education
+    ================================================== -->
+
+    <section
+        id="education"
+        class="content-card"
+    >
+
+        <h2 class="section-title">
+            Education
+        </h2>
+
+
+        <!-- BJTU PhD -->
 
         <div class="education-row">
-            <div class="education-year">2022.09 – 2027.06</div>
+
+            <div class="education-year">
+
+                2022.09 – 2027.06
+
+            </div>
+
+
             <div>
-                <div class="education-school">Beijing Jiaotong University</div>
+
+                <div class="education-school">
+
+                    Beijing Jiaotong University
+
+                </div>
+
+
                 <div class="education-degree">
-                    Ph.D. Student in Computer Science and Technology ·
-                    Advisor:
-                    <a href="https://faculty.bjtu.edu.cn/7968/" target="_blank" rel="noopener noreferrer">
+
+                    Ph.D. Student in Computer Science and Technology
+                    · Advisor:
+
+                    <a
+                        href="https://faculty.bjtu.edu.cn/7968/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         Prof. Congyan Lang
                     </a>
+
                 </div>
+
             </div>
+
         </div>
 
+
+
+        <!-- NTU -->
+
         <div class="education-row">
-            <div class="education-year">2025.09 – 2026.09</div>
+
+            <div class="education-year">
+
+                2025.09 – 2026.09
+
+            </div>
+
+
             <div>
-                <div class="education-school">Nanyang Technological University</div>
+
+                <div class="education-school">
+
+                    Nanyang Technological University
+
+                </div>
+
+
                 <div class="education-degree">
-                    Visiting Ph.D. Student ·
-                    Advisor:
-                    <a href="https://dr.ntu.edu.sg/entities/person/Binyang-Song" target="_blank" rel="noopener noreferrer">
+
+                    Visiting Ph.D. Student · Advisor:
+
+                    <a
+                        href="https://dr.ntu.edu.sg/entities/person/Binyang-Song"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         Prof. Binyang Song
                     </a>
+
                 </div>
+
             </div>
+
         </div>
 
-        <div class="education-row">
-            <div class="education-year">2020.09 – 2022.06</div>
-            <div>
-                <div class="education-school">Beijing Jiaotong University</div>
-                <div class="education-degree">
-                    M.S. in Computer Science and Technology ·
-                    Advisor: Prof. Congyan Lang
-                </div>
-            </div>
-        </div>
+
+
+        <!-- BJTU Master -->
 
         <div class="education-row">
-            <div class="education-year">2016.09 – 2020.06</div>
+
+            <div class="education-year">
+
+                2020.09 – 2022.06
+
+            </div>
+
+
             <div>
-                <div class="education-school">China University of Petroleum (East China)</div>
+
+                <div class="education-school">
+
+                    Beijing Jiaotong University
+
+                </div>
+
+
                 <div class="education-degree">
+
+                    M.S. in Computer Science and Technology
+                    · Advisor: Prof. Congyan Lang
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Bachelor -->
+
+        <div class="education-row">
+
+            <div class="education-year">
+
+                2016.09 – 2020.06
+
+            </div>
+
+
+            <div>
+
+                <div class="education-school">
+
+                    China University of Petroleum (East China)
+
+                </div>
+
+
+                <div class="education-degree">
+
                     B.S. in Computer Science and Technology
+
                 </div>
+
             </div>
+
         </div>
 
     </section>
 
-</div>
- </div>
-    
-<section id="publications"><h2 class="section-title">Publications</h2>
-<div class="pub-item"><div class="pub-year">2026</div><div><div class="pub-title">MLA3DVG: Dual-modality multi-level semantic alignment for robust monocular 3D visual grounding</div><div class="pub-authors"><strong>S. Chen</strong>, Z. Xu, L. Wei, Z. Chen, G. Wen, C. Lang, B. Song</div><div class="venue">Pattern Recognition <span class="tag">SCI Q1 / TOP</span></div></div></div>
-<div class="pub-item"><div class="pub-year">2026</div><div><div class="pub-title">Beyond Independence: Learning Correlated Views for Variational Incomplete Multi-View Clustering</div><div class="pub-authors">Z. Xu, A. Tang, <strong>S. Chen</strong>, X. Zou, C. Lang, R. Mancisidor, M. Kampffmeyer</div><div class="venue">International Conference on Machine Learning (ICML) <span class="tag">CCF-A</span></div></div></div>
-<div class="pub-item"><div class="pub-year">2024</div><div><div class="pub-title">Joint Homophily and Heterophily Relational Knowledge Distillation for Efficient and Compact 3D Object Detection</div><div class="pub-authors"><strong>S. Chen</strong>, L. Wei, L. Liang, C. Lang</div><div class="venue">ACM Multimedia <span class="tag">CCF-A</span></div></div></div>
-<div class="pub-item"><div class="pub-year">2023</div><div><div class="pub-title">Weakly Supervised Semantic Segmentation via Global Relations Mining</div><div class="pub-authors"><strong>S. Chen</strong>, G. Zhang, C. Lang, W. Xu, L. Wei, C. Wang, N. Hou</div><div class="venue">China Multimedia</div></div></div>
-<div class="pub-item"><div class="pub-year">2022</div><div><div class="pub-title">Weakly Supervised Video Object Segmentation via Dual-Attention Cross-Branch Fusion</div><div class="pub-authors">L. Wei, C. Lang, L. Liang, S. Feng, T. Wang, <strong>S. Chen</strong></div><div class="venue">ACM Transactions on Intelligent Systems and Technology (TIST)</div></div></div>
-<div class="pub-item"><div class="pub-year">2025</div><div><div class="pub-title">NTIRE 2025 Image Shadow Removal Challenge Report</div><div class="pub-authors">Challenge report contribution</div><div class="venue">CVPR Workshops <span class="tag">No. 7</span></div></div></div>
-<div style="margin-top:24px;color:#6b7280;font-size:14px"><strong>Under Review / In Submission</strong><ul><li>PoseGrounder: Pose-guided Cross-view Reasoning for Zero-Shot 3D Visual Grounding — AAAI 2027.</li><li>Detail Enhancement and Transfer Balance for Open-Vocabulary Compositional Zero-Shot Learning — IEEE Transactions on Multimedia.</li></ul></div>
-</section>
-<footer>© 2026 Shidi Chen · Beijing Jiaotong University · Built with GitHub Pages</footer>
+
+
+    <!-- =================================================
+         Publications
+    ================================================== -->
+
+    <section
+        id="publications"
+        class="content-card"
+    >
+
+        <h2 class="section-title">
+
+            Selected Publications
+
+        </h2>
+
+
+
+        <!-- Publication 1 -->
+
+        <div class="pub-item">
+
+            <div class="pub-year">
+                2026
+            </div>
+
+
+            <div>
+
+                <div class="pub-title">
+
+                    MLA3DVG: Dual-modality multi-level semantic
+                    alignment for robust monocular 3D visual grounding
+
+                </div>
+
+
+                <div class="pub-authors">
+
+                    <strong>S. Chen</strong>,
+                    Z. Xu,
+                    L. Wei,
+                    Z. Chen,
+                    G. Wen,
+                    C. Lang,
+                    B. Song
+
+                </div>
+
+
+                <div class="venue">
+
+                    Pattern Recognition
+
+                    <span class="tag">
+                        SCI Q1 / TOP
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Publication 2 -->
+
+        <div class="pub-item">
+
+            <div class="pub-year">
+                2026
+            </div>
+
+
+            <div>
+
+                <div class="pub-title">
+
+                    Beyond Independence: Learning Correlated Views
+                    for Variational Incomplete Multi-View Clustering
+
+                </div>
+
+
+                <div class="pub-authors">
+
+                    Z. Xu,
+                    A. Tang,
+                    <strong>S. Chen</strong>,
+                    X. Zou,
+                    C. Lang,
+                    R. Mancisidor,
+                    M. Kampffmeyer
+
+                </div>
+
+
+                <div class="venue">
+
+                    International Conference on Machine Learning (ICML)
+
+                    <span class="tag">
+                        CCF-A
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Publication 3 -->
+
+        <div class="pub-item">
+
+            <div class="pub-year">
+                2024
+            </div>
+
+
+            <div>
+
+                <div class="pub-title">
+
+                    Joint Homophily and Heterophily Relational
+                    Knowledge Distillation for Efficient and Compact
+                    3D Object Detection
+
+                </div>
+
+
+                <div class="pub-authors">
+
+                    <strong>S. Chen</strong>,
+                    L. Wei,
+                    L. Liang,
+                    C. Lang
+
+                </div>
+
+
+                <div class="venue">
+
+                    ACM Multimedia
+
+                    <span class="tag">
+                        CCF-A
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Publication 4 -->
+
+        <div class="pub-item">
+
+            <div class="pub-year">
+                2023
+            </div>
+
+
+            <div>
+
+                <div class="pub-title">
+
+                    Weakly Supervised Semantic Segmentation
+                    via Global Relations Mining
+
+                </div>
+
+
+                <div class="pub-authors">
+
+                    <strong>S. Chen</strong>,
+                    G. Zhang,
+                    C. Lang,
+                    W. Xu,
+                    L. Wei,
+                    C. Wang,
+                    N. Hou
+
+                </div>
+
+
+                <div class="venue">
+
+                    China Multimedia
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Publication 5 -->
+
+        <div class="pub-item">
+
+            <div class="pub-year">
+                2022
+            </div>
+
+
+            <div>
+
+                <div class="pub-title">
+
+                    Weakly Supervised Video Object Segmentation
+                    via Dual-Attention Cross-Branch Fusion
+
+                </div>
+
+
+                <div class="pub-authors">
+
+                    L. Wei,
+                    C. Lang,
+                    L. Liang,
+                    S. Feng,
+                    T. Wang,
+                    <strong>S. Chen</strong>
+
+                </div>
+
+
+                <div class="venue">
+
+                    ACM Transactions on Intelligent Systems
+                    and Technology (TIST)
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Publication 6 -->
+
+        <div class="pub-item">
+
+            <div class="pub-year">
+                2025
+            </div>
+
+
+            <div>
+
+                <div class="pub-title">
+
+                    NTIRE 2025 Image Shadow Removal Challenge Report
+
+                </div>
+
+
+                <div class="pub-authors">
+
+                    Challenge report contribution
+
+                </div>
+
+
+                <div class="venue">
+
+                    CVPR Workshops
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Under Review -->
+
+        <div class="submission">
+
+            <strong>
+                Under Review / In Submission
+            </strong>
+
+
+            <ul>
+
+                <li>
+
+                    PoseGrounder: Pose-guided Cross-view Reasoning
+                    for Zero-Shot 3D Visual Grounding —
+                    AAAI 2027.
+
+                </li>
+
+
+                <li>
+
+                    Detail Enhancement and Transfer Balance for
+                    Open-Vocabulary Compositional Zero-Shot Learning —
+                    IEEE Transactions on Multimedia.
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+
 </main>
+
+
+
+<!-- =====================================================
+     Footer
+===================================================== -->
+
+<footer>
+
+    © 2026 Shidi Chen
+
+</footer>
+
+
 </body>
+
 </html>
