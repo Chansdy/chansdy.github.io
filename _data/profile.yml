@@ -66,12 +66,12 @@ education:
     position: B.S. in Computer Science and Technology
     date: Sep. 2016 - Jun. 2020
 
-# experience:
-# - name: Nanyang Technological University
-#     logo: /assets/images/badges/ntu.png
-#     position: Visiting Ph.D. Student
-#     Advisor Binyang Song
-#     date: Sep. 2025 - Sep. 2026
+experience:
+- name: Nanyang Technological University
+    logo: /assets/images/badges/ntu.png
+    position: Visiting Ph.D. Student
+    Advisor: <a href="https://dr.ntu.edu.sg/entities/person/Binyang-Song" target="_blank" rel="noopener noreferrer"> Prof. Binyang Song</a>
+    date: Sep. 2025 - Sep. 2026
 #   - name: Peking University
 #     logo: /assets/images/badges/PKU_red.png
 #     position: Research Intern
