@@ -6,7 +6,7 @@ positions:
 - name: Ph.D. Student in Beijing Jiaotong University
 
 
-email: shidichen@bjtu.edu.cn
+email: shidichen‘@’bjtu.edu.cn
 # cv_link: link-to-your-cv-file
 gscholar: https://scholar.google.com/citations?hl=zh-TW&user=vtgM-14AAAAJ # This is an example, replace it with your own Google Scholar ID
 github: https://github.com/Chansdy
@@ -17,12 +17,20 @@ github: https://github.com/Chansdy
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    A <a href="https://en.wikipedia.org/wiki/Bicolor_cat" target="_blank">bicolor cat</a> is a cat with white fur combined with fur of some other colour, for example solid black, tabby, or colourpointed.
-  </p>
+    I am a Ph.D. student at the 
+        Key Laboratory of Transportation Big Data and Artificial Intelligence, Ministry of Education,
+        School of Computer Science and Technology, <strong>Beijing Jiaotong University</strong>,
+        advised by 
+        <a href="https://faculty.bjtu.edu.cn/7968/" target="_blank" rel="noopener noreferrer">
+            Prof. Congyan Lang </a>.
+ </p>
   <p>
-    There are various patterns of a bicolour cat. These range from the Van-patterned (colour on the crown of the head 
-    and the tail only) to a solid colour with a throat locket or medallion. Bicolour coats are found in many cat breeds, 
-    as well as being common in domestic longhair and domestic shorthair cats.
+    My research interests focus on <strong>3D Vision</strong> and 
+        <strong>Vision-Language Models</strong>, particularly 
+        <strong>3D Object Detection</strong> and <strong>3D Visual Grounding</strong>.
+        I aim to develop multimodal approaches for understanding and reasoning about
+        complex 3D environments.
+
   </p>
 
 portrait_url: /assets/images/photos/portrait.jpg
