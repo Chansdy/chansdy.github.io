@@ -68,11 +68,12 @@ education:
 
 experience:
   - name: Nanyang Technological University
-      logo: /assets/images/badges/ntu.png
-      position: >-
+    logo: /assets/images/badges/ntu.png
+    position:  >-
         Visiting Ph.D. Student<br/>
         Advisor: <a href="https://dr.ntu.edu.sg/entities/person/Binyang-Song" target="_blank" rel="noopener noreferrer"> Prof. Binyang Song</a>
-      date: Sep. 2025 - Sep. 2026
+    date: Sep. 2025 - Sep. 2026
+  
 #   - name: Peking University
 #     logo: /assets/images/badges/PKU_red.png
 #     position: Research Intern
