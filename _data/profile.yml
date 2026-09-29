@@ -52,14 +52,14 @@ education:
 
   - name: Beijing Jiaotong University
     logo: /assets/images/badges/bjtu.png
-    position: >-
-      <span style="white-space: nowrap;">M.S. in Computer Science and Technology</span><br/>
+    position: 
+       M.S. in Computer Science and Technology<br/>
     date: Sep. 2020 - Jun. 2022
 
   - name: China University of Petroleum (East China)
     logo: /assets/images/badges/pu.png
-    position: >-
-      <span style="white-space: nowrap;">B.S. in Computer Science and Technology</span><br/>
+    position: 
+       B.S. in Computer Science and Technology<br/>
     date: Sep. 2016 - Jun. 2020
 
 experience:
@@ -72,7 +72,8 @@ experience:
  
   - name: TeleAI
     logo: /assets/images/badges/OIP.png
-    position: Algorithm Intern
+    position: Algorithm Intern<br/>
+       Video Generation / Virtual Try-On
     date: Jul. 2024 - Dec. 2025  
   
 #   - name: Peking University
