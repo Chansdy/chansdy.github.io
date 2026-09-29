@@ -41,12 +41,12 @@ portrait_caption: >-
   Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
 
 education:
-  - name: Beijing Jiaotong University
+  - name: Beijing Jiaotong University       Sep. 2022 - Jun. 2027
     logo: /assets/images/badges/bjtu.png
     position: >-
       <span style="white-space: nowrap;">School of Computer Science and Technology</span><br/>
       Ph.D. Student
-    date: Sep. 2022 - Jun. 2027
+   
 
   - name: Nanyang Technological University
     logo: /assets/images/badges/ntu.png
