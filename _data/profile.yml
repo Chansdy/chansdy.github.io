@@ -49,21 +49,17 @@ education:
       Advisor: <a href="https://faculty.bjtu.edu.cn/7968/" target="_blank" rel="noopener noreferrer">Prof. Congyan Lang</a>
     date: Sep. 2022 - Jun. 2027
 
-  # - name: Nanyang Technological University
-  #   logo: /assets/images/badges/ntu.png
-  #   position: >-
-  #     Visiting Ph.D. Student<br/>
-  #     Advisor: Prof. Binyang Song
-  #   date: Sep. 2025 - Sep. 2026
 
   - name: Beijing Jiaotong University
     logo: /assets/images/badges/bjtu.png
-    position: M.S. in Computer Science and Technology
+    position: >-
+      <span style="white-space: nowrap;">M.S. in Computer Science and Technology</span><br/>
     date: Sep. 2020 - Jun. 2022
 
   - name: China University of Petroleum (East China)
     logo: /assets/images/badges/pu.png
-    position: B.S. in Computer Science and Technology
+     position: >-
+      <span style="white-space: nowrap;">B.S. in Computer Science and Technology</span><br/>
     date: Sep. 2016 - Jun. 2020
 
 experience:
@@ -73,6 +69,11 @@ experience:
         Visiting Ph.D. Student<br/>
         Advisor: <a href="https://dr.ntu.edu.sg/entities/person/Binyang-Song" target="_blank" rel="noopener noreferrer"> Prof. Binyang Song</a>
     date: Sep. 2025 - Sep. 2026
+ 
+  - name: TeleAI
+    logo: /assets/images/badges/PKU_red.png
+    position: Algorithm Intern
+    date: Jul. 2024 - Dec. 2025  
   
 #   - name: Peking University
 #     logo: /assets/images/badges/PKU_red.png
